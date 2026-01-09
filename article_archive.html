@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore BlogCraft's comprehensive article archive featuring SEO-optimized content, accessibility guides, and technical writing tutorials. Filter by category, date, and engagement metrics.">
+    <meta name="keywords" content="blog archive, SEO articles, accessibility guides, technical writing, content optimization, semantic HTML tutorials">
+    <meta name="author" content="BlogCraft">
+    <title>Article Archive - BlogCraft | SEO-Optimized Content Library</title>
+    <link rel="stylesheet" href="../css/main.css">
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fblogcraft5848back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-background">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg">Skip to main content</a>
+
+    <!-- Header Navigation -->
+    <header class="bg-white border-b border-border sticky top-0 z-40 shadow-sm" role="banner">
+        <nav class="container-custom py-4" aria-label="Main navigation">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="homepage.html" class="flex items-center gap-3 group" aria-label="BlogCraft Home">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect width="40" height="40" rx="8" fill="#2563eb"/>
+                        <path d="M12 14h16M12 20h16M12 26h10" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                        <circle cx="28" cy="26" r="3" fill="#10b981"/>
+                    </svg>
+                    <span class="font-headline text-2xl font-bold text-text-primary group-hover:text-primary transition-colors">BlogCraft</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex items-center gap-8" role="list">
+                    <li><a href="homepage.html" class="font-cta text-text-secondary hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="writing_dashboard.html" class="font-cta text-text-secondary hover:text-primary transition-colors">Dashboard</a></li>
+                    <li><a href="article_archive.html" class="font-cta text-primary font-semibold" aria-current="page">Articles</a></li>
+                    <li><a href="author_profile.html" class="font-cta text-text-secondary hover:text-primary transition-colors">Profile</a></li>
+                    <li><a href="resource_hub.html" class="font-cta text-text-secondary hover:text-primary transition-colors">Resources</a></li>
+                </ul>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center gap-4">
+                    <button class="btn-ghost" aria-label="Sign in to your account">Sign In</button>
+                    <button class="btn-primary" aria-label="Start writing for free">Start Writing</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 text-text-primary hover:text-primary transition-colors" aria-label="Open mobile menu" aria-expanded="false">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Archive Header Section -->
+        <section class="section bg-gradient-to-br from-primary-50 via-white to-accent-50 relative overflow-hidden pt-24 pb-16" aria-labelledby="archive-heading">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-5" aria-hidden="true">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2563eb" stroke-width="1"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)"/>
+                </svg>
+            </div>
+
+            <div class="container-custom relative">
+                <div class="max-w-4xl mx-auto text-center animate-fade-in">
+                    <div class="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                        <span>487 Articles Published</span>
+                    </div>
+                    
+                    <h1 id="archive-heading" class="font-headline text-5xl lg:text-6xl font-bold text-text-primary mb-6 leading-tight">
+                        Content That <span class="text-gradient">Performs & Inspires</span>
+                    </h1>
+                    
+                    <p class="text-xl text-text-secondary mb-8 leading-relaxed">
+                        Explore our comprehensive library of SEO-optimized articles, accessibility guides, and technical writing tutorials. Every piece demonstrates the perfect balance of creative expression and technical excellence.
+                    </p>
+
+                    <!-- Archive Stats -->
+                    <div class="flex flex-wrap items-center justify-center gap-8 text-sm">
+                        <div class="flex items-center gap-2 text-text-secondary">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>2.4M+ Total Views</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-text-secondary">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                            </svg>
+                            <span>127 Expert Authors</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-text-secondary">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>100% WCAG Compliant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter & Search Section -->
+        <section class="bg-white border-b border-border sticky top-[73px] z-30 shadow-sm" aria-label="Article filters and search">
+            <div class="container-custom py-6">
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <!-- Search Bar -->
+                    <div class="flex-1">
+                        <label for="article-search" class="sr-only">Search articles</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-text-secondary" aria-hidden="true">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.35-4.35"></path>
+                                </svg>
+                            </div>
+                            <input 
+                                type="search" 
+                                id="article-search"
+                                name="search"
+                                placeholder="Search articles by title, topic, or keyword..." 
+                                class="form-input pl-12 pr-12"
+                                aria-label="Search articles">
+                            <button class="absolute inset-y-0 right-0 pr-4 flex items-center text-text-secondary hover:text-primary transition-colors" aria-label="Clear search">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Filter Buttons -->
+                    <div class="flex flex-wrap items-center gap-3">
+                        <!-- Category Filter -->
+                        <div class="relative">
+                            <button class="btn-outline flex items-center gap-2" aria-label="Filter by category" aria-expanded="false">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="4" y1="21" x2="4" y2="14"></line>
+                                    <line x1="4" y1="10" x2="4" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12" y2="3"></line>
+                                    <line x1="20" y1="21" x2="20" y2="16"></line>
+                                    <line x1="20" y1="12" x2="20" y2="3"></line>
+                                    <line x1="1" y1="14" x2="7" y2="14"></line>
+                                    <line x1="9" y1="8" x2="15" y2="8"></line>
+                                    <line x1="17" y1="16" x2="23" y2="16"></line>
+                                </svg>
+                                <span>Category</span>
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Date Filter -->
+                        <div class="relative">
+                            <button class="btn-outline flex items-center gap-2" aria-label="Filter by date" aria-expanded="false">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>Date</span>
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Difficulty Filter -->
+                        <div class="relative">
+                            <button class="btn-outline flex items-center gap-2" aria-label="Filter by difficulty level" aria-expanded="false">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>Difficulty</span>
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Reset Filters -->
+                        <button class="btn-ghost flex items-center gap-2" aria-label="Reset all filters">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="1 4 1 10 7 10"></polyline>
+                                <polyline points="23 20 23 14 17 14"></polyline>
+                                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+                            </svg>
+                            <span>Reset</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Active Filters Display -->
+                <div class="flex flex-wrap items-center gap-2 mt-4" role="region" aria-label="Active filters">
+                    <span class="text-sm text-text-secondary">Active filters:</span>
+                    <span class="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm">
+                        SEO Best Practices
+                        <button aria-label="Remove SEO Best Practices filter">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </span>
+                    <span class="inline-flex items-center gap-2 bg-accent-100 text-accent-700 px-3 py-1 rounded-full text-sm">
+                        2026
+                        <button aria-label="Remove 2026 date filter">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Summary -->
+        <section class="bg-surface py-6" aria-label="Search results summary">
+            <div class="container-custom">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div>
+                        <p class="text-text-primary font-medium">Showing <span class="text-primary font-semibold">487 articles</span></p>
+                        <p class="text-sm text-text-secondary mt-1">Updated daily with fresh content</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <label for="sort-by" class="text-sm text-text-secondary">Sort by:</label>
+                        <select id="sort-by" name="sort" class="form-input py-2 text-sm">
+                            <option value="recent">Most Recent</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="views">Most Viewed</option>
+                            <option value="engagement">Highest Engagement</option>
+                            <option value="seo">Best SEO Score</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Grid Section -->
+        <section class="section bg-white" aria-labelledby="articles-grid-heading">
+            <div class="container-custom">
+                <h2 id="articles-grid-heading" class="sr-only">Article Archive Grid</h2>
+                
+                <!-- Masonry Grid Layout -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Featured Article 1 -->
+                    <article class="card hover-lift group">
+                        <div class="relative rounded-lg overflow-hidden mb-4 aspect-video">
+                            <img src="https://images.unsplash.com/photo-1625296278775-c0ccc86b9338" 
+                                 alt="Modern workspace with laptop displaying semantic HTML code structure and SEO optimization tools" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-slow"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                            <div class="absolute top-4 left-4 flex gap-2">
+                                <span class="badge-primary">SEO Guide</span>
+                                <span class="badge-success">Featured</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-3 py-1 text-sm font-medium text-text-primary">
+                                8 min read
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-secondary mb-3">
+                            <time datetime="2026-01-05">Jan 5, 2026</time>
+                            <span aria-hidden="true">•</span>
+                            <span class="flex items-center gap-1">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                2.4k views
+                            </span>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
+                            <a href="javascript:void(0)" class="focus-ring">Mastering Semantic HTML for Better SEO Performance</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4">Learn how proper semantic structure can boost your search rankings by 150% while improving accessibility and user experience. This comprehensive guide covers HTML5 elements, ARIA attributes, and real-world implementation strategies.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border-light">
+                            <div class="flex items-center gap-2">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1ec91ebef-1763301008266.png" 
+                                     alt="Sarah Chen, Senior Content Strategist" 
+                                     class="w-8 h-8 rounded-full object-cover"
+                                     loading="lazy"
+                                     onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;">
+                                <span class="text-sm font-medium text-text-primary">Sarah Chen</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <span class="inline-flex items-center gap-1 text-success-600">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="font-semibold">SEO 98/100</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="card hover-lift group">
+                        <div class="relative rounded-lg overflow-hidden mb-4 aspect-video">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1fe61939e-1767855391763.png" 
+                                 alt="Accessibility testing interface showing WCAG compliance checklist and screen reader compatibility tools" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-slow"
+                                 loading="lazy"
+                                 onerror="this.src='https://img.rocket.new/generatedImages/rocket_gen_img_19f155a1a-1767974711675.png'; this.onerror=null;">
+                            <div class="absolute top-4 left-4">
+                                <span class="badge-success">Accessibility</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-3 py-1 text-sm font-medium text-text-primary">
+                                12 min read
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-secondary mb-3">
+                            <time datetime="2026-01-03">Jan 3, 2026</time>
+                            <span aria-hidden="true">•</span>
+                            <span class="flex items-center gap-1">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                3.1k views
+                            </span>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
+                            <a href="javascript:void(0)" class="focus-ring">WCAG 2.1 Compliance: A Writer's Complete Guide</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4">Comprehensive walkthrough of accessibility standards with practical examples for creating inclusive content that reaches every audience. Includes testing tools, common pitfalls, and remediation strategies.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border-light">
+                            <div class="flex items-center gap-2">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1d628ec5b-1763296592393.png" 
+                                     alt="Marcus Rodriguez, Accessibility Specialist" 
+                                     class="w-8 h-8 rounded-full object-cover"
+                                     loading="lazy"
+                                     onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;">
+                                <span class="text-sm font-medium text-text-primary">Marcus Rodriguez</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <span class="inline-flex items-center gap-1 text-success-600">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="font-semibold">SEO 95/100</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="card hover-lift group">
+                        <div class="relative rounded-lg overflow-hidden mb-4 aspect-video">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1cc153126-1764661263087.png" 
+                                 alt="Analytics dashboard displaying content performance metrics, traffic growth charts, and engagement statistics" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-slow"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                            <div class="absolute top-4 left-4">
+                                <span class="badge-warning">Performance</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-3 py-1 text-sm font-medium text-text-primary">
+                                10 min read
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-secondary mb-3">
+                            <time datetime="2026-01-01">Jan 1, 2026</time>
+                            <span aria-hidden="true">•</span>
+                            <span class="flex items-center gap-1">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                1.8k views
+                            </span>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
+                            <a href="javascript:void(0)" class="focus-ring">Content Performance Metrics That Actually Matter</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4">Move beyond vanity metrics and discover the KPIs that truly indicate content success and drive business results. Learn to track engagement depth, conversion attribution, and ROI.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border-light">
+                            <div class="flex items-center gap-2">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_139694ce5-1766504946403.png" 
+                                     alt="Emily Thompson, Data Analytics Lead" 
+                                     class="w-8 h-8 rounded-full object-cover"
+                                     loading="lazy"
+                                     onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;">
+                                <span class="text-sm font-medium text-text-primary">Emily Thompson</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <span class="inline-flex items-center gap-1 text-success-600">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="font-semibold">SEO 92/100</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="card hover-lift group">
+                        <div class="relative rounded-lg overflow-hidden mb-4 aspect-video">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_13e23bdfd-1764656055734.png" 
+                                 alt="Content strategy planning session with keyword research tools and editorial calendar on whiteboard" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-slow"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                            <div class="absolute top-4 left-4">
+                                <span class="badge-primary">Strategy</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-3 py-1 text-sm font-medium text-text-primary">
+                                15 min read
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-secondary mb-3">
+                            <time datetime="2025-12-28">Dec 28, 2025</time>
+                            <span aria-hidden="true">•</span>
+                            <span class="flex items-center gap-1">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                2.7k views
+                            </span>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
+                            <a href="javascript:void(0)" class="focus-ring">Building a Content Strategy That Scales</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4">Strategic framework for creating sustainable content operations that grow with your business. Covers editorial planning, team structure, workflow automation, and quality control systems.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border-light">
+                            <div class="flex items-center gap-2">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1276dced3-1763296874694.png" 
+                                     alt="David Park, Technical Writing Director" 
+                                     class="w-8 h-8 rounded-full object-cover"
+                                     loading="lazy"
+                                     onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'; this.onerror=null;">
+                                <span class="text-sm font-medium text-text-primary">David Park</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <span class="inline-flex items-center gap-1 text-success-600">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="font-semibold">SEO 96/100</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 - Case Study -->
+                    <article class="card hover-lift group lg:col-span-2">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="relative rounded-lg overflow-hidden aspect-video md:aspect-auto">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop" 
+                                     alt="Before and after comparison showing traffic growth from 500 to 12,500 monthly visitors through SEO optimization" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-slow"
+                                     loading="lazy"
+                                     onerror="this.src='https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                                <div class="absolute top-4 left-4 flex gap-2">
+                                    <span class="badge-error">Case Study</span>
+                                    <span class="badge-success">Featured</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 text-sm text-text-secondary mb-3">
+                                        <time datetime="2025-12-20">Dec 20, 2025</time>
+                                        <span aria-hidden="true">•</span>
+                                        <span class="flex items-center gap-1">
+                                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            5.2k views
+                                        </span>
+                                        <span aria-hidden="true">•</span>
+                                        <span>18 min read</span>
+                                    </div>
+                                    <h3 class="font-headline text-2xl font-semibold text-text-primary mb-3 group-hover:text-primary transition-colors">
+                                        <a href="javascript:void(0)" class="focus-ring">How Semantic HTML Increased Traffic by 2,400% in 6 Months</a>
+                                    </h3>
+                                    <p class="text-text-secondary mb-4">Complete transformation case study showing how a B2B SaaS company restructured their blog with semantic HTML, proper heading hierarchy, and accessibility improvements. Results include dramatic traffic growth, improved engagement metrics, and higher conversion rates.</p>
+                                    
+                                    <!-- Key Metrics -->
+                                    <div class="grid grid-cols-3 gap-4 mb-4 p-4 bg-surface rounded-lg">
+                                        <div>
+                                            <p class="text-2xl font-bold text-success-600">+2,400%</p>
+                                            <p class="text-xs text-text-secondary">Traffic Growth</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-2xl font-bold text-primary">98/100</p>
+                                            <p class="text-xs text-text-secondary">SEO Score</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-2xl font-bold text-accent-600">100%</p>
+                                            <p class="text-xs text-text-secondary">WCAG AA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center justify-between pt-4 border-t border-border-light">
+                                    <div class="flex items-center gap-2">
+                                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1ec91ebef-1763301008266.png" 
+                                             alt="Sarah Chen, Senior Content Strategist" 
+                                             class="w-8 h-8 rounded-full object-cover"
+                                             loading="lazy"
+                                             onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;">
+                                        <span class="text-sm font-medium text-text-primary">Sarah Chen</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="btn-ghost text-sm">Read Full Case Study →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="card hover-lift group">
+                        <div class="relative rounded-lg overflow-hidden mb-4 aspect-video">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_15cea433a-1767870527796.png" 
+                                 alt="Technical documentation interface showing API reference with code examples and interactive playground" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-slow"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                            <div class="absolute top-4 left-4">
+                                <span class="badge-secondary">Technical</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-3 py-1 text-sm font-medium text-text-primary">
+                                14 min read
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-secondary mb-3">
+                            <time datetime="2025-12-15">Dec 15, 2025</time>
+                            <span aria-hidden="true">•</span>
+                            <span class="flex items-center gap-1">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                1.9k views
+                            </span>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
+                            <a href="javascript:void(0)" class="focus-ring">Technical Writing for Developer Audiences</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4">Bridge the gap between technical accuracy and readability. Learn to create documentation that developers actually want to read, with practical examples and code snippets.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border-light">
+                            <div class="flex items-center gap-2">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1276dced3-1763296874694.png" 
+                                     alt="David Park, Technical Writing Director" 
+                                     class="w-8 h-8 rounded-full object-cover"
+                                     loading="lazy"
+                                     onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'; this.onerror=null;">
+                                <span class="text-sm font-medium text-text-primary">David Park</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <span class="inline-flex items-center gap-1 text-success-600">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="font-semibold">SEO 94/100</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 7 -->
+                    <article class="card hover-lift group">
+                        <div class="relative rounded-lg overflow-hidden mb-4 aspect-video">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1592a8404-1767974714686.png" 
+                                 alt="Content writer using keyword research tools and SEO optimization software on dual monitors" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-slow"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.pexels.com/photos/34600/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                            <div class="absolute top-4 left-4">
+                                <span class="badge-primary">SEO Guide</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-3 py-1 text-sm font-medium text-text-primary">
+                                11 min read
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-secondary mb-3">
+                            <time datetime="2025-12-10">Dec 10, 2025</time>
+                            <span aria-hidden="true">•</span>
+                            <span class="flex items-center gap-1">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                2.1k views
+                            </span>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
+                            <a href="javascript:void(0)" class="focus-ring">Keyword Research Strategies for 2026</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4">Modern approach to keyword research that goes beyond search volume. Discover intent-based targeting, semantic clustering, and competitive gap analysis techniques.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border-light">
+                            <div class="flex items-center gap-2">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_139694ce5-1766504946403.png" 
+                                     alt="Emily Thompson, Data Analytics Lead" 
+                                     class="w-8 h-8 rounded-full object-cover"
+                                     loading="lazy"
+                                     onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;">
+                                <span class="text-sm font-medium text-text-primary">Emily Thompson</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <span class="inline-flex items-center gap-1 text-success-600">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="font-semibold">SEO 97/100</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 8 -->
+                    <article class="card hover-lift group">
+                        <div class="relative rounded-lg overflow-hidden mb-4 aspect-video">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1cff21f9d-1766043817216.png" 
+                                 alt="Mobile responsive design testing on multiple devices showing accessibility features and touch targets" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-slow"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                            <div class="absolute top-4 left-4">
+                                <span class="badge-success">Accessibility</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-3 py-1 text-sm font-medium text-text-primary">
+                                9 min read
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-secondary mb-3">
+                            <time datetime="2025-12-05">Dec 5, 2025</time>
+                            <span aria-hidden="true">•</span>
+                            <span class="flex items-center gap-1">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                1.6k views
+                            </span>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
+                            <a href="javascript:void(0)" class="focus-ring">Mobile-First Content Design Principles</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4">Create content that works beautifully on mobile devices while maintaining desktop excellence. Covers touch targets, readability, and progressive enhancement strategies.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border-light">
+                            <div class="flex items-center gap-2">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1d628ec5b-1763296592393.png" 
+                                     alt="Marcus Rodriguez, Accessibility Specialist" 
+                                     class="w-8 h-8 rounded-full object-cover"
+                                     loading="lazy"
+                                     onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;">
+                                <span class="text-sm font-medium text-text-primary">Marcus Rodriguez</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <span class="inline-flex items-center gap-1 text-success-600">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="font-semibold">SEO 93/100</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 9 -->
+                    <article class="card hover-lift group">
+                        <div class="relative rounded-lg overflow-hidden mb-4 aspect-video">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1fbbaa9e0-1766960255178.png" 
+                                 alt="Content team collaboration session with editorial calendar and workflow management tools displayed" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-slow"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                            <div class="absolute top-4 left-4">
+                                <span class="badge-primary">Strategy</span>
+                            </div>
+                            <div class="absolute bottom-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg px-3 py-1 text-sm font-medium text-text-primary">
+                                13 min read
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-text-secondary mb-3">
+                            <time datetime="2025-11-28">Nov 28, 2025</time>
+                            <span aria-hidden="true">•</span>
+                            <span class="flex items-center gap-1">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                2.3k views
+                            </span>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">
+                            <a href="javascript:void(0)" class="focus-ring">Editorial Workflow Automation Best Practices</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4">Streamline your content production with smart automation. Learn to build efficient workflows that maintain quality while scaling output and reducing manual overhead.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border-light">
+                            <div class="flex items-center gap-2">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1276dced3-1763296874694.png" 
+                                     alt="David Park, Technical Writing Director" 
+                                     class="w-8 h-8 rounded-full object-cover"
+                                     loading="lazy"
+                                     onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'; this.onerror=null;">
+                                <span class="text-sm font-medium text-text-primary">David Park</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <span class="inline-flex items-center gap-1 text-success-600">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="font-semibold">SEO 91/100</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Section -->
+                <div class="text-center mt-16" role="region" aria-live="polite" aria-atomic="true">
+                    <p class="text-text-secondary mb-6">Showing 9 of 487 articles</p>
+                    <button class="btn-primary hover-lift">
+                        Load More Articles
+                        <svg class="inline-block ml-2" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter CTA Section -->
+        <section class="section bg-gradient-to-br from-primary-600 to-primary-800 text-white relative overflow-hidden" aria-labelledby="newsletter-heading">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-10" aria-hidden="true">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <circle cx="2" cy="2" r="1" fill="white"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#dots)"/>
+                </svg>
+            </div>
+
+            <div class="container-custom relative">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-full mb-6">
+                        <svg width="32" height="32" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                        </svg>
+                    </div>
+                    
+                    <h2 id="newsletter-heading" class="font-headline text-4xl font-bold mb-4">Never Miss a New Article</h2>
+                    <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                        Get weekly insights on SEO best practices, accessibility standards, and content optimization strategies delivered straight to your inbox.
+                    </p>
+
+                    <form class="max-w-md mx-auto" aria-label="Newsletter subscription form">
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <div class="flex-1">
+                                <label for="newsletter-email" class="sr-only">Email address</label>
+                                <input 
+                                    type="email" 
+                                    id="newsletter-email"
+                                    name="email"
+                                    placeholder="Enter your email address" 
+                                    class="form-input text-text-primary"
+                                    required
+                                    aria-required="true">
+                            </div>
+                            <button type="submit" class="btn bg-white text-primary hover:bg-primary-50 whitespace-nowrap">
+                                Subscribe Now
+                            </button>
+                        </div>
+                        <p class="text-sm text-primary-100 mt-4">
+                            Join 15,000+ content creators. Unsubscribe anytime.
+                        </p>
+                    </form>
+
+                    <!-- Trust Badges -->
+                    <div class="flex flex-wrap items-center justify-center gap-8 mt-8 pt-8 border-t border-white border-opacity-20">
+                        <div class="flex items-center gap-2 text-sm">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>No spam, ever</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>GDPR compliant</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>Weekly updates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white pt-16 pb-8" role="contentinfo">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect width="40" height="40" rx="8" fill="#2563eb"/>
+                            <path d="M12 14h16M12 20h16M12 26h10" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="28" cy="26" r="3" fill="#10b981"/>
+                        </svg>
+                        <span class="font-headline text-xl font-bold">BlogCraft</span>
+                    </div>
+                    <p class="text-secondary-300 mb-6">
+                        Where technical excellence meets creative expression. Professional blog writing platform for the modern content creator.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-white transition-colors" aria-label="Follow us on Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-white transition-colors" aria-label="Follow us on LinkedIn">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-white transition-colors" aria-label="Follow us on GitHub">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Platform Links -->
+                <div>
+                    <h3 class="font-headline text-lg font-semibold mb-6">Platform</h3>
+                    <ul class="space-y-3" role="list">
+                        <li><a href="writing_dashboard.html" class="text-secondary-300 hover:text-white transition-colors">Writing Dashboard</a></li>
+                        <li><a href="article_archive.html" class="text-secondary-300 hover:text-white transition-colors">Article Archive</a></li>
+                        <li><a href="author_profile.html" class="text-secondary-300 hover:text-white transition-colors">Author Profiles</a></li>
+                        <li><a href="resource_hub.html" class="text-secondary-300 hover:text-white transition-colors">Resource Hub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Links -->
+                <div>
+                    <h3 class="font-headline text-lg font-semibold mb-6">Resources</h3>
+                    <ul class="space-y-3" role="list">
+                        <li><a href="resource_hub.html" class="text-secondary-300 hover:text-white transition-colors">SEO Guides</a></li>
+                        <li><a href="resource_hub.html" class="text-secondary-300 hover:text-white transition-colors">Accessibility Tutorials</a></li>
+                        <li><a href="resource_hub.html" class="text-secondary-300 hover:text-white transition-colors">Writing Templates</a></li>
+                        <li><a href="resource_hub.html" class="text-secondary-300 hover:text-white transition-colors">Community Forum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h3 class="font-headline text-lg font-semibold mb-6">Company</h3>
+                    <ul class="space-y-3" role="list">
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-secondary-800">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="text-secondary-400 text-sm">
+                        © 2026 BlogCraft. All Rights Reserved.
+                    </p>
+                    <div class="flex items-center gap-6 text-sm">
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-white transition-colors">Accessibility Statement</a>
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-white transition-colors">GDPR Compliance</a>
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-white transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
