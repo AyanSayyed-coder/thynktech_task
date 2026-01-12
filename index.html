@@ -304,6 +304,29 @@
                                     <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
                                 </svg>
                             </div>
+                            <section class="max-w-5xl mx-auto my-12 text-center">
+  <h2 class="text-2xl font-bold mb-4">Explore BlogCraft Areas</h2>
+  <p class="mb-6 text-gray-600">Click on different areas of the image to navigate.</p>
+
+  <img 
+    src="https://via.placeholder.com/800x400" 
+    alt="BlogCraft platform overview" 
+    usemap="#blogcraftmap"
+    class="mx-auto rounded-lg shadow"
+  >
+
+  <map name="blogcraftmap">
+    <!-- Homepage area -->
+    <area shape="rect" coords="0,0,260,400" href="pages/homepage.html" alt="Homepage">
+
+    <!-- Article archive area -->
+    <area shape="rect" coords="270,0,530,400" href="pages/article_archive.html" alt="Articles">
+
+    <!-- Writing dashboard area -->
+    <area shape="rect" coords="540,0,800,400" href="pages/writing_dashboard.html" alt="Dashboard">
+  </map>
+</section>
+
                             <div class="flex-1">
                                 <h3 class="font-headline text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors">Technical Writing</h3>
                                 <span class="badge-error">31 Resources</span>
@@ -1079,4 +1102,5 @@
     </footer>
 <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
+
 </html>
